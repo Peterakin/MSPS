@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import Steps from "./Components/Steps/Steps";
-import Footer from "./Components/Footer/Footer";
-
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import Notfound from "./Pages/Notfound/Notfound";
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Steps />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<Notfound />} />
+    </Routes>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { TiTimes } from "react-icons/ti";
 import { CgMenuMotion } from "react-icons/cg";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);
   return (
@@ -15,22 +16,19 @@ const Navbar = () => {
           onClick={() => setMobile(false)}
         >
           <ul>
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>Courses</li>
-            </a>
-            <a href="#">
-              <li>About Us</li>
-            </a>
-            <a href="#">
-              <li>Contact</li>
-            </a>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="about">About Us</Link>
+            </li>
+            <li>
+              <Link to="contact">Contact US</Link>
+            </li>
           </ul>
         </div>
         <div className="nav_btn">
-          <button>Enroll Now</button>
+          <button>Contac</button>
         </div>
         <button className="toggle" onClick={() => setMobile(!Mobile)}>
           {Mobile ? (

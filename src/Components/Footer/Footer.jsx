@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/Mustardseedlogo.jpg";
+import { Link } from "react-router-dom";
 import {
   FaMapMarkerAlt,
   FaEnvelope,
@@ -40,8 +41,15 @@ const Footer = () => {
         <div className="footer-column">
           <h4>OUR SCHOOL</h4>
           <ul>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="about">About Us</Link>
+            </li>
+            <li>
+              <Link to="contact">Contact US</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,8 +60,6 @@ const Footer = () => {
         <div className="footer-socials">
           <FaFacebookF />
           <FaGooglePlusG />
-          <FaTwitter />
-          <FaPinterestP />
           <FaInstagram />
         </div>
       </div>
