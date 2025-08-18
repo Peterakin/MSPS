@@ -28,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav_btn">
-          <button>Contac</button>
+          <button>Contact</button>
         </div>
         <button className="toggle" onClick={() => setMobile(!Mobile)}>
           {Mobile ? (
