@@ -1,0 +1,244 @@
+/* Gallery.css */
+
+/* Gallery Hero Section */
+.gallery-hero-section {
+  background-color: #4a6baf;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.gallery-hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.gallery-hero-section .lead {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Gallery Filter Section */
+.gallery-filter-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin: 5px;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Gallery Grid Section */
+.gallery-grid-section {
+  padding: 40px 0 80px;
+  background-color: #ffffff;
+}
+
+.gallery-item-col {
+  margin-bottom: 30px;
+}
+
+.gallery-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-overlay-content h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.gallery-card .card-body {
+  padding: 20px;
+}
+
+.gallery-card .card-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.gallery-card .card-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.gallery-card .card-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Gallery Modal */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 20px;
+}
+
+.gallery-modal-content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1060;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal-image {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+.gallery-modal-info {
+  padding: 20px;
+}
+
+.gallery-modal-info h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.gallery-modal-category {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .gallery-hero-section h1 {
+    font-size: 2.3rem;
+  }
+
+  .gallery-modal-content {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-buttons {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .filter-btn {
+    margin: 3px;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .gallery-image {
+    height: 180px;
+  }
+
+  .gallery-modal-image {
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-hero-section {
+    padding: 60px 0;
+  }
+
+  .gallery-hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-card .card-body {
+    padding: 15px;
+  }
+
+  .gallery-modal-info {
+    padding: 15px;
+  }
+
+  .gallery-modal-info h3 {
+    font-size: 1.3rem;
+  }
+}

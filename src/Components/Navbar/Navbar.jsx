@@ -1,45 +1,44 @@
-import React, { useState } from "react";
-import "./Navbar.css";
-import { TiTimes } from "react-icons/ti";
-import { CgMenuMotion } from "react-icons/cg";
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const Navbar = () => {
-  const [Mobile, setMobile] = useState(false);
+import Logo from "../../assets/Mustardseedlogo.jpg";
+import "./Navbar.css";
+
+const Navigation = () => {
   return (
-    <div>
-      <div className="navbar">
-        <div className="nav-logo">
-          <h2>MUSTARD SEED</h2>
-        </div>
-        <div
-          className={Mobile ? "nav-links" : "links"}
-          onClick={() => setMobile(false)}
-        >
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="about">About Us</Link>
-            </li>
-            <li>
-              <Link to="contact">Contact US</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="nav_btn">
-          <button>Contact</button>
-        </div>
-        <button className="toggle" onClick={() => setMobile(!Mobile)}>
-          {Mobile ? (
-            <TiTimes className="close_icon" />
-          ) : (
-            <CgMenuMotion className="open_icon" />
-          )}
-        </button>
-      </div>
-    </div>
+    <Navbar bg="light" expand="lg" className="navbar-custom" fixed="top">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            alt="mustardseed-logo"
+            src={Logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{" "}
+          <strong>Mustard Seed Private School</strong>
+        </Navbar.Brand>
+        <Navbar.Brand></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/gallery">
+              Gallery
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Contact Us
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navigation;
