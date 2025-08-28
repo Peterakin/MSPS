@@ -10,8 +10,8 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <h5>Mustard Seed Private School</h5>
-            <p>Empowering minds, shaping futures.</p>
+            <h5>Mustard Seed Private Schools</h5>
+            <p>We nuture your child to Excellence.</p>
           </Col>
           <Col md={4}>
             <h5>Quick Links</h5>
@@ -33,21 +33,23 @@ const Footer = () => {
           <Col md={4}>
             <h5>Contact Info</h5>
             <p>
-              123 Education Street
+              Along Gomo Palace Road
               <br />
-              Learning City, ED 12345
+              Kujes, Abuja.
             </p>
             <p>
-              Email: info@brightfutureacademy.edu
+              Email: mustardseedabuja@yahoo.com
               <br />
-              Phone: (123) 456-7890
+              Phone: (+234) 8036906161
+              <br />
+              Phone: (+234) 8036259509
             </p>
           </Col>
         </Row>
         <Row>
           <Col className="text-center py-3">
             <p>
-              &copy; {currentYear} Mustard Seed Private School. All Rights
+              &copy; {currentYear} Mustard Seed Private Schools. All Rights
               Reserved.
             </p>
           </Col>

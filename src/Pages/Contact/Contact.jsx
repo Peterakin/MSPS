@@ -30,11 +30,9 @@ const Contact = () => {
                   <div className="contact-icon">📍</div>
                   <Card.Title>Our Location</Card.Title>
                   <Card.Text>
-                    123 Education Street
+                    Along Gomo Palace Road
                     <br />
-                    Learning City, ED 12345
-                    <br />
-                    United States
+                    Kuja, Abuja.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -45,9 +43,11 @@ const Contact = () => {
                   <div className="contact-icon">📞</div>
                   <Card.Title>Phone & Email</Card.Title>
                   <Card.Text>
-                    Phone: (123) 456-7890
+                    Phone: (+234) 8036906161
                     <br />
-                    Email: info@brightfutureacademy.edu
+                    Phone: (+234) 8036259509
+                    <br />
+                    Email: mustardseedabuja@yahoo.com
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -58,7 +58,7 @@ const Contact = () => {
                   <div className="contact-icon">🕒</div>
                   <Card.Title>Office Hours</Card.Title>
                   <Card.Text>
-                    Monday - Friday: 8:00 AM - 4:30 PM
+                    Monday - Friday: 7:30 AM - 3:30 PM
                     <br />
                     Saturday: 9:00 AM - 12:00 PM
                     <br />
@@ -86,28 +86,24 @@ const Contact = () => {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>Do you offer financial aid or scholarships?</h4>
-                <p>
-                  Yes, we offer various financial aid options and merit-based
-                  scholarships. Please contact our admissions office for more
-                  information.
-                </p>
+                <h4>Do you offer scholarships?</h4>
+                <p>Yes, we offer scholarships on compationate grounds.</p>
               </div>
             </Col>
             <Col lg={6}>
               <div className="faq-item">
                 <h4>What extracurricular activities do you offer?</h4>
                 <p>
-                  We offer a wide range of activities including sports, arts,
-                  music, debate, robotics, and community service programs.
+                  We offer a wide range of activities including sports, music,
+                  debate, robotics, and community service programs.
                 </p>
               </div>
               <div className="faq-item">
                 <h4>How can I schedule a campus tour?</h4>
                 <p>
-                  You can schedule a campus tour by filling out the contact form
-                  above, calling our admissions office, or sending an email to
-                  visits@brightfutureacademy.edu.
+                  You can schedule a campus tour by contacting the above,
+                  calling our admissions office, or sending an email to visit:
+                  mustardseedabuja@yahoo.com
                 </p>
               </div>
             </Col>

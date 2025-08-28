@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import student from "../../assets/S2.jpg";
+import student from "../../assets/S1.jpg";
 import "./Home.css";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="hero-content">
-              <h1>Welcome to Mustard Seed Private School</h1>
+              <h1>Welcome to Mustard Seed Private Schools</h1>
               <p className="lead">
                 Where education meets innovation. We nurture young minds to
                 become tomorrow's leaders.

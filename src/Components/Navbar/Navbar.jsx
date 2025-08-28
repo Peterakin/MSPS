@@ -16,7 +16,7 @@ const Navigation = () => {
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          <strong>Mustard Seed Private School</strong>
+          <strong>Mustard Seed Private Schools</strong>
         </Navbar.Brand>
         <Navbar.Brand></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

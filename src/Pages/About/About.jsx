@@ -1,5 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import student from "../../assets/S2.jpg";
+import staff1 from "../../assets/mom.jpg";
+import staff2 from "../../assets/prisca.jpg";
+import staff3 from "../../assets/nancy.jpg";
+import staff4 from "../../assets/chinwe.jpg";
 import "./About.css";
 
 const About = () => {
@@ -10,9 +15,9 @@ const About = () => {
         <Container>
           <Row className="justify-content-center">
             <Col md={10} className="text-center">
-              <h1>About Mustard Seed Private School</h1>
+              <h1>About Mustard Seed Private Schools</h1>
               <p className="lead">
-                Founded in 2005, Mustard Seed Private School has been dedicated
+                Founded in 2001, Mustard Seed Private Schools has been dedicated
                 to providing exceptional education that prepares students for
                 success in a rapidly changing world.
               </p>
@@ -28,7 +33,7 @@ const About = () => {
             <Col lg={6}>
               <div className="about-image">
                 <img
-                  src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  src={student}
                   alt="School building"
                   className="img-fluid rounded"
                 />
@@ -41,8 +46,8 @@ const About = () => {
                   Mustard Seed Private School was established with a vision to
                   create a learning environment where students could thrive
                   academically, socially, and emotionally. What began as a small
-                  institution with just 50 students has now grown into a
-                  prestigious academy serving over 1,000 students.
+                  institution with just 5 students has now grown into a
+                  prestigious academy serving over 200 students.
                 </p>
                 <p>
                   Our journey has been marked by a commitment to educational
@@ -65,11 +70,10 @@ const About = () => {
               <div className="mission-card">
                 <h3>Our Mission</h3>
                 <p>
-                  To provide a stimulating learning environment that encourages
-                  all students to realize their full potential, both
-                  academically and personally, by inspiring a passion for
-                  learning and developing the skills necessary for success in an
-                  ever-changing global society.
+                  We are poised to create a centre for intellectual and moral
+                  excellence which give these future leaders opportunity to
+                  maximize their potentials through works, commitment,
+                  discipline and Ulimitely the fear of God.
                 </p>
               </div>
             </Col>
@@ -77,10 +81,9 @@ const About = () => {
               <div className="vision-card">
                 <h3>Our Vision</h3>
                 <p>
-                  To be recognized as a center of excellence in education,
-                  producing confident, responsible, and innovative global
-                  citizens who are prepared to meet the challenges of the future
-                  and make positive contributions to society.
+                  To sow the seed of knowledge in our children that will produce
+                  men and women that will positively affect Nigeria, Africa and
+                  world at large.
                 </p>
               </div>
             </Col>
@@ -93,57 +96,47 @@ const About = () => {
         <Container>
           <h2 className="text-center mb-5">Our Leadership Team</h2>
           <Row>
-            <Col lg={4} md={6}>
+            <Col lg={3} md={6}>
               <Card className="team-card">
-                <Card.Img
-                  variant="top"
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
-                />
+                <Card.Img variant="top" src={staff1} />
                 <Card.Body>
-                  <Card.Title>Dr. Sarah Johnson</Card.Title>
+                  <Card.Title>Mrs Victoria Akinlosotu</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    Principal
+                    Proprietress
                   </Card.Subtitle>
-                  <Card.Text>
-                    With over 20 years of experience in education, Dr. Johnson
-                    leads our academy with passion and vision.
-                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4} md={6}>
+            <Col lg={3} md={6}>
               <Card className="team-card">
-                <Card.Img
-                  variant="top"
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                />
+                <Card.Img variant="top" src={staff2} />
                 <Card.Body>
-                  <Card.Title>Prof. Michael Chen</Card.Title>
+                  <Card.Title>Mrs. Priscilla Johnson</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    Academic Director
+                    Administrative Director
                   </Card.Subtitle>
-                  <Card.Text>
-                    Prof. Chen oversees our curriculum development and ensures
-                    the highest academic standards.
-                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4} md={6}>
+            <Col lg={3} md={6}>
               <Card className="team-card">
-                <Card.Img
-                  variant="top"
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                />
+                <Card.Img variant="top" src={staff3} />
                 <Card.Body>
-                  <Card.Title>Ms. Emily Rodriguez</Card.Title>
+                  <Card.Title>Miss Nancy Nze</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    Student Affairs Director
+                    Head of Junior Secondary School
                   </Card.Subtitle>
-                  <Card.Text>
-                    Ms. Rodriguez is dedicated to ensuring a supportive and
-                    enriching experience for all students.
-                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col lg={3} md={6}>
+              <Card className="team-card">
+                <Card.Img variant="top" src={staff4} />
+                <Card.Body>
+                  <Card.Title>Mrs. Chinwe Madukoma</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    Head of Primary Section
+                  </Card.Subtitle>
                 </Card.Body>
               </Card>
             </Col>
