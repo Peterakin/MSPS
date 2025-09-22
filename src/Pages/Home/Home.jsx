@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import student from "../../assets/S1.jpg";
 import "./Home.css";
 
@@ -17,11 +18,11 @@ const Home = () => {
                 become tomorrow's leaders.
               </p>
               <div className="hero-buttons">
-                <Button variant="primary" size="lg" href="/about">
-                  Learn More
+                <Button variant="primary" size="lg">
+                  <Link to="/about">Learn More</Link>
                 </Button>
-                <Button variant="outline-primary" size="lg" href="/contact">
-                  Contact Us
+                <Button variant="outline-primary" size="lg">
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </Col>
@@ -93,8 +94,8 @@ const Home = () => {
               <p className="lead">
                 Take the first step towards a brighter future for your child.
               </p>
-              <Button variant="primary" size="lg" href="/contact">
-                Contact Us Today
+              <Button variant="primary" size="lg">
+                <Link to="/contact">Contact Us Today</Link>
               </Button>
             </Col>
           </Row>
