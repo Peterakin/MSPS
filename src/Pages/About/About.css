@@ -1,5 +1,7 @@
 /* About.css */
-
+.about-page {
+  margin-top: 30px;
+}
 /* About Hero Section */
 .about-hero-section {
   background-color: #4a6baf;

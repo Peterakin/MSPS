@@ -1,5 +1,7 @@
 /* Gallery.css */
-
+.gallery-page {
+  margin-top: 50px;
+}
 /* Gallery Hero Section */
 .gallery-hero-section {
   background-color: #4a6baf;
