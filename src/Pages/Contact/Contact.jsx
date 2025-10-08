@@ -32,7 +32,7 @@ const Contact = () => {
                   <Card.Text>
                     Along Gomo Palace Road
                     <br />
-                    Kuja, Abuja.
+                    Kuje, Abuja.
                   </Card.Text>
                 </Card.Body>
               </Card>

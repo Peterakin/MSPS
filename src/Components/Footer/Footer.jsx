@@ -36,7 +36,7 @@ const Footer = () => {
             <p>
               Along Gomo Palace Road
               <br />
-              Kujes, Abuja.
+              Kuje, Abuja.
             </p>
             <p>
               Email: mustardseedabuja@yahoo.com
