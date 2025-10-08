@@ -60,7 +60,7 @@ const Contact = () => {
                   <Card.Text>
                     Monday - Friday: 7:30 AM - 3:30 PM
                     <br />
-                    Saturday: 9:00 AM - 12:00 PM
+                    Saturday: Closed
                     <br />
                     Sunday: Closed
                   </Card.Text>

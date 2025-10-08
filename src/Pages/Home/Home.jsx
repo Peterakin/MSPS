@@ -19,10 +19,14 @@ const Home = () => {
               </p>
               <div className="hero-buttons">
                 <Button variant="primary" size="lg">
-                  <Link to="/about">Learn More</Link>
+                  <Link className="learn-more" to="/about">
+                    Learn More
+                  </Link>
                 </Button>
                 <Button variant="outline-primary" size="lg">
-                  <Link to="/contact">Contact Us</Link>
+                  <Link className="contact" to="/contact">
+                    Contact Us
+                  </Link>
                 </Button>
               </div>
             </Col>
@@ -95,7 +99,9 @@ const Home = () => {
                 Take the first step towards a brighter future for your child.
               </p>
               <Button variant="primary" size="lg">
-                <Link to="/contact">Contact Us Today</Link>
+                <Link className="contact" to="/contact">
+                  Contact Us Today
+                </Link>
               </Button>
             </Col>
           </Row>
